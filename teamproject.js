@@ -32,3 +32,21 @@ function matrixFormat(lst) {
     }
     return matStr;
 }
+
+// Multiplication of matrix
+function multwomat(m,mm){
+    mul=[]
+    for (let i=0;i<n;i++){
+        let r=[];
+        for ( let j=0;j<n;j++){
+            s=0;
+            for (let k=0;k<n;k++){
+                s+=m[i][k]*mm[k][j];
+            }
+            r.push(s);
+        }
+        mul.push(r);
+}   
+    return mul
+}
+
