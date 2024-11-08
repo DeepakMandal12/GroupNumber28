@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>LDU factorisation</h1>
+    <p>To decompose A in L,D and U`, first we need order of matrix A.</p>
     <button onclick="takeorder('showmatrix')" > enter order of matrix A</button>
     <p>Matrix A:-</p>
     <div id="showmatrix">
@@ -19,8 +20,18 @@
         <p>for finding Matrix U , first we need to find all Elimination matrices and multiply <br>one by one with matrix A  and then we will get U matrix. </p>
     <button onclick="Umatrix('showUmatrix')" > click here get all Elimination Matrix and U matrix </button>
     <div id="showUmatrix">
-        <!-- <p>isme u matrix show hoga</p> -->
+        <!-- <p>here u matrix will show</p> -->
     </div>
+    </div>
+
+    <div id="lmat">
+        <h2>L matrix :-</h2>
+        <p>L matrix is inverse of Multiplication of all Elimination matrices. </p>
+        <button onclick="lmatrix('showlmatrix')" > click here get L matrix </button>
+        
+        <div id="showlmatrix">
+            
+        </div>
     </div>
 
     
