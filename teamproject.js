@@ -33,6 +33,31 @@ function matrixFormat(lst) {
     return matStr;
 }
 
+
+function makeEM(row, col, value) { // function of making elimination matrices
+    let mat = makeIdentity();
+    mat[row][col] = value;
+    return mat;
+} 
+
+
+function makeIdentity() {   // function of making identity matrix
+    let mat = [];
+    for (let i = 0; i < n; i++) {
+        mat[i] = [];
+        for (let j = 0; j < n; j++) {
+            if (i==j) {
+                mat[i][j] = 1
+            }
+            else {
+                mat[i][j] = 0
+            }
+        }
+    } 
+    return mat;
+}
+
+
 // Multiplication of matrix
 function multwomat(m,mm){
     mul=[]
