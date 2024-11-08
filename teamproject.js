@@ -123,3 +123,32 @@ function lmatrix(id){
     
     document.getElementById(id).innerHTML += matrixFormat(L);
 }
+
+// U` matrix function 
+function UUmatrix(uumat){
+    for (let i=0;i<n;i++){
+        r=[]
+        let fac=U[i][i]
+        for ( let j=0;j<n;j++){
+            r.push(U[i][j]/fac)
+        }
+        Uu.push(r)
+    }
+    document.getElementById(uumat).innerHTML+=matrixFormat(Uu);
+}
+
+
+// D matrix function
+function Dmatrix(dmat){
+    for (let i=0;i<n;i++){
+        D[i] = [];
+        for (let j=0;j<n;j++){
+            if (i==j)
+                D[i][j] = U[i][i];
+            else
+                D[i][j] = 0;
+        }
+    }
+
+    document.getElementById(dmat).innerHTML+=matrixFormat(D);
+}
