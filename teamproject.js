@@ -8,7 +8,7 @@ let D=[];
 
 // function for making matrix A by taking order 
 function takeorder(id){
-    n = parseInt(prompt("Enter the order of matrix "));
+    n = parseInt(prompt("Enter the order of matrix A "));
     for (let i = 0; i < n; i++) {
         let r = [];
         for (let j = 0; j < n; j++) {
@@ -151,4 +151,18 @@ function Dmatrix(dmat){
     }
 
     document.getElementById(dmat).innerHTML+=matrixFormat(D);
+}
+
+// function for multiplication of L,D and U` matrices
+function multiplyLDU(LDU){
+    DD=multwomat(D,Uu)
+    Aa=multwomat(L,DD)
+
+    document.getElementById(LDU).innerHTML+=matrixFormat(Aa)
+}
+
+
+// for compare A and A`, make a function to call  A again.
+function Amatrix(AMAT){
+    document.getElementById(AMAT).innerHTML+=matrixFormat(a)
 }
