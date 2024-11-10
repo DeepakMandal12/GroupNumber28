@@ -2,6 +2,10 @@ body{
     background: radial-gradient(ellipse at top, #ffffff 0%, #a2a2a2 100%);
     height: 100vh;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -9,6 +13,8 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+    font-size: 3rem;
+
 }
 
 li{
@@ -23,10 +29,10 @@ li{
 
 #info{
     display: flex;
-    /* flex-direction: column; */
+    height: 10rem;
     justify-content: center;
     align-items: center;
-    
+    padding: 5rem;
 
 }
 
@@ -36,16 +42,18 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 15rem;
-    height: 15rem;
-    margin: 10px;
+    width: 14rem;
+    height: 14rem;
+    margin: 13px;
     border-radius: 5px;
     box-shadow: 5px 4px 6px rgb(25, 25, 25, 0.3);
+    transition: 0.3s ease-in-out;
 
 }
 
 .member_info:hover{
     background: radial-gradient(ellipse at top right,  rgb(32, 0, 95) 0%, #6c006a 100%);
+    height: 15rem;
     color: white;
 }
 
