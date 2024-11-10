@@ -1,5 +1,5 @@
 let n = 3;
-
+let a=[]
 // function for making matrix A by taking order 
 function takeorder(id){
     n = parseInt(prompt("Enter the order of matrix A "));
